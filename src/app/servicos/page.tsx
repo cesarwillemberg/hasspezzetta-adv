@@ -41,34 +41,34 @@ export default function ServicosPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <ServiceCard 
-            title={tServices("civil")}
-            description={tServices("civilDesc")}
-            icon={faScaleBalanced}
-          />
-          <ServiceCard 
-            title={tServices("corporate")}
-            description={tServices("corporateDesc")}
-            icon={faBuilding}
-          />
-          <ServiceCard 
             title={tServices("labor")}
             description={tServices("laborDesc")}
             icon={faBriefcase}
           />
           <ServiceCard 
-            title={tServices("tax")}
-            description={tServices("taxDesc")}
+            title={tServices("industrial")}
+            description={tServices("industrialDesc")}
+            icon={faBuilding}
+          />
+          <ServiceCard 
+            title={tServices("compliance")}
+            description={tServices("complianceDesc")}
+            icon={faScaleBalanced}
+          />
+          <ServiceCard 
+            title={tServices("calculations")}
+            description={tServices("calculationsDesc")}
             icon={faFileInvoiceDollar}
           />
           <ServiceCard 
-            title={tServices("penal")}
-            description={tServices("penalDesc")}
-            icon={faGavel}
+            title={tServices("health")}
+            description={tServices("healthDesc")}
+            icon={faHandHoldingDollar}
           />
           <ServiceCard 
-            title="Direito do Consumidor"
-            description="Atuação em demandas consumeristas, defendendo interesses de empresas em litígios."
-            icon={faHandHoldingDollar}
+            title={tServices("litigation")}
+            description={tServices("litigationDesc")}
+            icon={faGavel}
           />
         </div>
       </Section>

@@ -1,7 +1,7 @@
 {
   "Navigation": {
     "home": "Home",
-    "team": "Nossa Equipe",
+    "team": "Sobre",
     "services": "Serviços",
     "contact": "Contato"
   },
@@ -24,25 +24,45 @@
   "Services": {
     "title": "Nossos Serviços",
     "subtitle": "Especialidades do escritório",
-    "civil": "Direito Civil",
-    "civilDesc": "Assessoria em contratos, responsabilidade civil, família e sucessões.",
-    "labor": "Direito Trabalhista",
-    "laborDesc": "Atuação em contencioso e consultivo trabalhista patronal.",
-    "corporate": "Direito Empresarial",
-    "corporateDesc": "Assessoria societária, falências e recuperação de empresas.",
-    "tax": "Direito Tributário",
-    "taxDesc": "Planejamento tributário e defesa em execuções fiscais.",
-    "penal": "Direito Penal",
-    "penalDesc": "Atuação especializada em crimes empresariais e compliance."
+    "labor": "Direito do Trabalho",
+    "laborDesc": "Atuação especializada em auditoria de insalubridade e verbas para o setor de saúde.",
+    "industrial": "Direito Industrial",
+    "industrialDesc": "Defesa de direitos para trabalhadores de frigoríficos e linhas de produção.",
+    "compliance": "Compliance Trabalhista",
+    "complianceDesc": "Verificação de conformidade em contratos de trabalho e benefícios hospitalares.",
+    "calculations": "Cálculos Técnicos",
+    "calculationsDesc": "Especialidade em cálculos complexos de adicional de insalubridade e periculosidade.",
+    "health": "Direito à Saúde",
+    "healthDesc": "Assessoria jurídica para profissionais da saúde em questões de direitos trabalhistas.",
+    "litigation": "Contencioso Especializado",
+    "litigationDesc": "Representação em processos judiciais para recuperação de créditos trabalhistas."
   },
   "Team": {
     "title": "Nossa Equipe",
     "subtitle": "Conheça os profissionais por trás da nossa excelência",
-    "partner1": "Dr. Carlos Hass",
-    "p1Spec": "Sócio Fundador | Especialista em Direito Civil",
-    "p1Bio": "Mestre em Direito com mais de 20 anos de experiência em litígios complexos.",
-    "partner2": "Dra. Mariana Pezzetta",
-    "p2Spec": "Sócia Fundadora | Especialista em Direito Empresarial",
-    "p2Bio": "Doutora em Direito Comercial, atuando na estruturação de grandes negócios."
+    "partner1": "Bernardo Luiz Pezzetta Willemberg",
+    "p1Spec": "Sócio Fundador | Especialista em Direito do Trabalho",
+    "p1Bio": "Especialista em Direito do Trabalho e Direito Desportivo.",
+    "partner2": "Diulie Kelly Beck Hass",
+    "p2Spec": "Sócia Fundadora | Especialista em Direito do Consumidor",
+    "p2Bio": "Especialista em Direito do Consumidor e Direito Digital.",
+    "partner3": "Jolair de Ávila Hass",
+    "p3Spec": "Sócio Fundador | Especialista em Direito Tributário",
+    "p3Bio": "Especialista em Recuperação Tributária e Direito Previdenciário."
+  },
+  "Contact": {
+    "title": "Fale Conosco",
+    "subtitle": "Estamos prontos para atender você",
+    "description": "Preencha o formulário abaixo ou utilize um de nossos canais de atendimento.",
+    "formName": "Nome",
+    "formEmail": "E-mail",
+    "formSubject": "Assunto",
+    "formMessage": "Mensagem",
+    "formSubmit": "Enviar",
+    "orContactVia": "OU ENTRE EM CONTATO POR",
+    "addressTitle": "Nosso Endereço",
+    "phoneTitle": "Telefone",
+    "emailTitle": "E-mail Direto",
+    "socialTitle": "Redes Sociais"
   }
 }

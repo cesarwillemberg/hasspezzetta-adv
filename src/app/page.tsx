@@ -26,6 +26,18 @@ export default function Home() {
   const tServices = useTranslations("Services");
   const tTeam = useTranslations("Team");
 
+  // Calculate dynamic years of experience from March 26, 2024
+  const calcExperience = () => {
+    const start = new Date(2024, 2, 26); // Month is 0-indexed (2 = March)
+    const now = new Date();
+    let years = now.getFullYear() - start.getFullYear();
+    if (now.getMonth() < start.getMonth() || (now.getMonth() === start.getMonth() && now.getDate() < start.getDate())) {
+      years--;
+    }
+    return Math.max(1, years); // Ensure at least 1 year is shown
+  };
+  const expYears = calcExperience();
+
   return (
     <main className="flex-grow flex flex-col">
       {/* HERO SECTION */}
@@ -64,7 +76,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="border-l-4 border-secondary pl-4">
-                <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+15</span>
+                <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+{expYears}</span>
                 <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">Anos de Experiência</span>
               </div>
               <div className="border-l-4 border-primary pl-4">
@@ -89,18 +101,18 @@ export default function Home() {
          />
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <ServiceCard 
-              title={tServices("civil")}
-              description={tServices("civilDesc")}
+              title={tServices("labor")}
+              description={tServices("laborDesc")}
               icon={faScaleBalanced}
             />
             <ServiceCard 
-              title={tServices("corporate")}
-              description={tServices("corporateDesc")}
+              title={tServices("industrial")}
+              description={tServices("industrialDesc")}
               icon={faBuilding}
             />
             <ServiceCard 
-              title={tServices("labor")}
-              description={tServices("laborDesc")}
+              title={tServices("compliance")}
+              description={tServices("complianceDesc")}
               icon={faBriefcase}
             />
          </div>
@@ -115,7 +127,7 @@ export default function Home() {
            title={tTeam("title")} 
            subtitle={tTeam("subtitle")}
          />
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
             <LawyerCard 
               name={tTeam("partner1")}
               specialty={tTeam("p1Spec")}
@@ -128,6 +140,13 @@ export default function Home() {
               specialty={tTeam("p2Spec")}
               bio={tTeam("p2Bio")}
               imageUrl="/assets/imgs/equipe/foto_diulie.avif"
+              linkedin="https://linkedin.com"
+            />
+            <LawyerCard 
+              name={tTeam("partner3")}
+              specialty={tTeam("p3Spec")}
+              bio={tTeam("p3Bio")}
+              imageUrl="/assets/imgs/equipe/foto_jolair.avif"
               linkedin="https://linkedin.com"
             />
          </div>

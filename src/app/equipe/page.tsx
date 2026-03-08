@@ -36,7 +36,7 @@ export default function EquipePage() {
         <h3 className="text-2xl font-bold font-outfit text-primary dark:text-secondary mb-8 text-center border-b border-border pb-4 w-fit mx-auto">
           Sócios Fundadores
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <LawyerCard 
             name={tTeam("partner1")}
             specialty={tTeam("p1Spec")}
@@ -51,15 +51,22 @@ export default function EquipePage() {
             imageUrl="/assets/imgs/equipe/foto_diulie.avif"
             linkedin="https://linkedin.com"
           />
+          <LawyerCard 
+            name={tTeam("partner3")}
+            specialty={tTeam("p3Spec")}
+            bio={tTeam("p3Bio")}
+            imageUrl="/assets/imgs/equipe/foto_jolair.avif"
+            linkedin="https://linkedin.com"
+          />
         </div>
 
         {/* Advogados Associados (Mock) */}
-        <h3 className="text-2xl font-bold font-outfit text-primary dark:text-secondary mb-8 text-center border-b border-border pb-4 w-fit mx-auto">
+        {/* <h3 className="text-2xl font-bold font-outfit text-primary dark:text-secondary mb-8 text-center border-b border-border pb-4 w-fit mx-auto">
           Advogados Associados
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
            {/* Mock associative lawyers */}
-           <LawyerCard 
+           {/* <LawyerCard 
               name="Dr. Jolair"
               specialty="Direito Tributário"
               bio="Especialista com longa atuação em demandas complexas e estratégicas."
@@ -77,7 +84,7 @@ export default function EquipePage() {
               bio="Mestre em Direito de Família, atua com sensibilidade e técnica em litígios."
               imageUrl="/assets/imgs/hero/img_hero_bernardo_diulie.avif"
             />
-        </div>
+        </div> */}
       </Section>
     </main>
   );

@@ -38,10 +38,10 @@ export function Footer() {
             <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
               <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/adv.hasspezzetta/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
               <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
+            <a href="https://wa.me/message/ZTCJQAWF5IF5I1" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
               <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5" />
             </a>
           </div>
@@ -81,27 +81,32 @@ export function Footer() {
             <div>
               <p className="text-white/80 text-sm mb-2 font-medium">Endereço Principal</p>
               <address className="not-italic text-white/60 text-sm">
-                Av. Paulista, 1000<br />
-                Bela Vista<br />
-                São Paulo - SP, 01310-100
+                Rua 14 de Julho 149 - Centro<br />
+                Ijuí - RS, Brasil<br />
+                Edifício Jamile - sala 405, 4º andar.
               </address>
             </div>
             <div>
               <p className="text-white/80 text-sm mb-2 font-medium">Fale Conosco</p>
-              <p className="text-white/60 text-sm mb-1">contato@hasspezzetta.com.br</p>
-              <p className="text-white/60 text-sm">+55 (11) 99999-9999</p>
-              <p className="text-white/60 text-sm">+55 (11) 3333-3333</p>
+              <p className="text-white/60 text-sm mb-1">hasspezzettaadv@gmail.com</p>
+              <p className="text-white/60 text-sm">+55 (55) 3940-0016</p>
             </div>
           </div>
         </div>
       </div>
       
       <div className="law-container mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-white/50 text-xs">
-          &copy; {year} Hass & Pezzetta Advocacia. Todos os direitos reservados.
-        </p>
-        <p className="text-white/50 text-xs">
-          OAB/SP 000.000
+        <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4">
+          <p className="text-white/50 text-xs">
+            &copy; {year} Hass & Pezzetta Advocacia. Todos os direitos reservados.
+          </p>
+          <span className="text-white/30 text-xs hidden md:inline">|</span>
+          <p className="text-white/50 text-xs">
+            Feito por <a href="https://cesar.willemberg.com/" target="_blank" rel="noreferrer" className="text-secondary hover:text-white transition-colors">César Willemberg</a>
+          </p>
+        </div>
+        <p className="text-white/50 text-xs mt-4 md:mt-0">
+          CNPJ 54.480.211/0001-06
         </p>
       </div>
     </footer>

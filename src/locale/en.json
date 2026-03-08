@@ -1,7 +1,7 @@
 {
   "Navigation": {
     "home": "Home",
-    "team": "Our Team",
+    "team": "About",
     "services": "Services",
     "contact": "Contact"
   },
@@ -24,25 +24,45 @@
   "Services": {
     "title": "Our Services",
     "subtitle": "Firm specialties",
-    "civil": "Civil Law",
-    "civilDesc": "Assistance in contracts, civil liability, family, and succession.",
     "labor": "Labor Law",
-    "laborDesc": "Representation in litigation and preventive corporate labor consulting.",
-    "corporate": "Corporate Law",
-    "corporateDesc": "Corporate advisory, bankruptcy, and business recovery.",
-    "tax": "Tax Law",
-    "taxDesc": "Tax planning and defense in tax executions.",
-    "penal": "Criminal Law",
-    "penalDesc": "Specialized defense in corporate crimes and compliance."
+    "laborDesc": "Specialized representation in unhealthiness auditing and benefits for the healthcare sector.",
+    "industrial": "Industrial Law",
+    "industrialDesc": "Defense of rights for workers in slaughterhouses and production lines.",
+    "compliance": "Labor Compliance",
+    "complianceDesc": "Compliance verification in employment contracts and hospital benefits.",
+    "calculations": "Technical Calculations",
+    "calculationsDesc": "Expertise in complex calculations for hazard and hazard pay.",
+    "health": "Health Law",
+    "healthDesc": "Legal advice for healthcare professionals on labor rights issues.",
+    "litigation": "Specialized Litigation",
+    "litigationDesc": "Representation in legal proceedings for the recovery of labor credits."
   },
   "Team": {
     "title": "Our Team",
     "subtitle": "Meet the professionals behind our excellence",
-    "partner1": "Dr. Carlos Hass",
-    "p1Spec": "Founding Partner | Specialist in Civil Law",
-    "p1Bio": "Master in Law with over 20 years of experience in complex litigation.",
-    "partner2": "Dra. Mariana Pezzetta",
-    "p2Spec": "Founding Partner | Specialist in Corporate Law",
-    "p2Bio": "PhD in Commercial Law, acting in the structuring of large businesses."
+    "partner1": "Bernardo Luiz Pezzetta Willemberg",
+    "p1Spec": "Founding Partner | Specialist in Labor Law",
+    "p1Bio": "Specialist in Labor Law and Sports Law.",
+    "partner2": "Diulie Kelly Beck Hass",
+    "p2Spec": "Founding Partner | Specialist in Consumer Law",
+    "p2Bio": "Specialist in Consumer Law and Digital Law.",
+    "partner3": "Jolair de Ávila Hass",
+    "p3Spec": "Founding Partner | Specialist in Tax Law",
+    "p3Bio": "Specialist in Tax Recovery and Social Security Law."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "We are ready to assist you",
+    "description": "Please fill out the form below or use one of our other communication channels.",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSubmit": "Send",
+    "orContactVia": "OR CONTACT US VIA",
+    "addressTitle": "Our Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "Direct Email",
+    "socialTitle": "Social Media"
   }
 }
