@@ -3,6 +3,7 @@
     "home": "Home",
     "team": "About",
     "services": "Services",
+    "rights": "Your Rights",
     "contact": "Contact"
   },
   "Theme": {
@@ -37,6 +38,11 @@
     "litigation": "Specialized Litigation",
     "litigationDesc": "Representation in legal proceedings for the recovery of labor credits."
   },
+  "History": {
+    "title": "Our History",
+    "subtitle": "Learn a little about our history",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
   "Team": {
     "title": "Our Team",
     "subtitle": "Meet the professionals behind our excellence",
@@ -64,5 +70,33 @@
     "phoneTitle": "Phone",
     "emailTitle": "Direct Email",
     "socialTitle": "Social Media"
+  },
+  "Rights": {
+    "title": "Your Rights",
+    "subtitle": "Know your labor rights",
+    "description": "Information is the first step to ensuring your rights are respected. Below, we detail some of the main rights that are often neglected.",
+    "download": "Download Material",
+    "watchVideo": "Watch Video",
+    "health": {
+      "title": "1. Healthcare Workers",
+      "guideTitle": "Healthcare Worker's Rights Guide",
+      "tableTitle": "Hospital Unhealthiness Audit Table",
+      "videoTitle": "Want to know more about your rights? Watch our video"
+    },
+    "production": {
+      "title": "2. Production Line and Cold Environment Operators",
+      "guideTitle": "Rights Guide: The Slaughterhouse Worker",
+      "tableTitle": "Worker Table - Cold Environments",
+      "videoTitle": "Want to know more about your rights? Watch our video"
+    },
+    "calculations": {
+      "title": "3. Calculations you need to know",
+      "healthTitle": "Healthcare Worker Calculation",
+      "productionTitle": "Production Line and Cold Environment Worker Calculation"
+    },
+    "form": {
+      "title": "4. Assessment Form",
+      "desc": "Fill out the form below so we can evaluate your case in a personalized way."
+    }
   }
 }

@@ -14,6 +14,7 @@ const NAV_ITEMS: NavItem[] = [
   { key: "home", href: "/" },
   { key: "team", href: "/equipe" },
   { key: "services", href: "/servicos" },
+  { key: "rights", href: "/direitos" },
 ];
 
 export function Navbar() {

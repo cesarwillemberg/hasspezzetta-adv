@@ -3,6 +3,7 @@
     "home": "Home",
     "team": "Sobre",
     "services": "Serviços",
+    "rights": "Seus Direitos",
     "contact": "Contato"
   },
   "Theme": {
@@ -37,6 +38,11 @@
     "litigation": "Contencioso Especializado",
     "litigationDesc": "Representação em processos judiciais para recuperação de créditos trabalhistas."
   },
+  "History": {
+    "title": "Nossa História",
+    "subtitle": "Conheça um pouco sobre nossa história",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
   "Team": {
     "title": "Nossa Equipe",
     "subtitle": "Conheça os profissionais por trás da nossa excelência",
@@ -64,5 +70,33 @@
     "phoneTitle": "Telefone",
     "emailTitle": "E-mail Direto",
     "socialTitle": "Redes Sociais"
+  },
+  "Rights": {
+    "title": "Seus Direitos",
+    "subtitle": "Conheça seus direitos trabalhistas",
+    "description": "Informação é o primeiro passo para garantir que seus direitos sejam respeitados. Abaixo, detalhamos alguns dos principais direitos que frequentemente são negligenciados.",
+    "download": "Baixar Material",
+    "watchVideo": "Assistir ao Vídeo",
+    "health": {
+      "title": "1. Trabalhadores da Saúde",
+      "guideTitle": "O Guia de Direitos do Trabalhador da Saúde",
+      "tableTitle": "Tabela de Auditoria de Insalubridade em Hospitais",
+      "videoTitle": "Quer saber mais sobre seu direito? Assista ao nosso vídeo"
+    },
+    "production": {
+      "title": "2. Operador de Linha de Produção e Ambientes Frios",
+      "guideTitle": "Guia de Direitos: O Trabalhador de Frigorífico",
+      "tableTitle": "Tabela Trabalhador - Ambientes Frios",
+      "videoTitle": "Quer saber mais sobre seu direito? Assista ao nosso vídeo"
+    },
+    "calculations": {
+      "title": "3. Cálculos que você precisa saber",
+      "healthTitle": "Cálculo Trabalhador da Saúde",
+      "productionTitle": "Cálculo Trabalhador Linha de Produção e Ambientes Frios"
+    },
+    "form": {
+      "title": "4. Formulário de Avaliação",
+      "desc": "Preencha o formulário abaixo para avaliarmos o seu caso de forma personalizada."
+    }
   }
 }

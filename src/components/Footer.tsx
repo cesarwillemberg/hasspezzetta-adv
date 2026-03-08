@@ -67,6 +67,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/direitos" className="text-white/80 hover:text-secondary transition-colors text-sm">
+                {t("rights")}
+              </Link>
+            </li>
+            <li>
               <Link href="/contato" className="text-white/80 hover:text-secondary transition-colors text-sm">
                 {t("contact")}
               </Link>
@@ -102,7 +107,7 @@ export function Footer() {
           </p>
           <span className="text-white/30 text-xs hidden md:inline">|</span>
           <p className="text-white/50 text-xs">
-            Feito por <a href="https://cesar.willemberg.com/" target="_blank" rel="noreferrer" className="text-secondary hover:text-white transition-colors">César Willemberg</a>
+            Feito por <a href="https://cesar.willemberg.com/" target="_blank" rel="noreferrer" className="text-secondary hover:text-white underline underline-offset-4 transition-colors">César Willemberg</a>
           </p>
         </div>
         <p className="text-white/50 text-xs mt-4 md:mt-0">

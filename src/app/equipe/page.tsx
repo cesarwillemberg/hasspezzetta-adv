@@ -16,10 +16,25 @@ export async function generateMetadata() {
 
 export default function EquipePage() {
   const tTeam = useTranslations("Team");
+  const tHistory = useTranslations("History");
 
   return (
     <main className="flex-grow flex flex-col pt-12">
-      <Section bgWhite className="pb-8">
+      {/* Nossa História Section */}
+      <Section className="pb-16 pt-8">
+        <SectionHeader 
+          title={tHistory("title")} 
+          subtitle={tHistory("subtitle")}
+        />
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-lg text-muted-foreground dark:text-gray-300 leading-relaxed md:text-xl md:leading-10">
+            {tHistory("content")}
+          </p>
+        </div>
+      </Section>
+
+      {/* Nossa Equipe Section */}
+      <Section bgWhite className="py-20 border-t border-border/50 shadow-inner">
         <SectionHeader 
           title={tTeam("title")} 
           subtitle={tTeam("subtitle")}

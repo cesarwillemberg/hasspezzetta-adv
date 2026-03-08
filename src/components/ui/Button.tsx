@@ -7,6 +7,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "sm" | "md" | "lg";
   href?: string;
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
 export function Button({
@@ -15,6 +17,8 @@ export function Button({
   size = "md",
   href,
   className = "",
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const baseStyles = "inline-flex items-center justify-center font-semibold rounded-md transition-all duration-300 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed";
@@ -35,8 +39,16 @@ export function Button({
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
+    const isExternal = href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel');
+    if (isExternal) {
+      return (
+        <a href={href} className={classes} target={target || "_blank"} rel={rel || "noopener noreferrer"}>
+          {children}
+        </a>
+      );
+    }
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} target={target} rel={rel}>
         {children}
       </Link>
     );
