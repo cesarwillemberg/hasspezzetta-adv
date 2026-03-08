@@ -75,8 +75,8 @@ export default function DireitosPage() {
                       picture-in-picture; 
                       web-share
                     " 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
                     ></iframe>
                 </div>
              </div>
