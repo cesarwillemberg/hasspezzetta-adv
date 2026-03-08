@@ -1,0 +1,48 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "team": "Nuestro Equipo",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "Theme": {
+    "light": "Tema Claro",
+    "dark": "Tema Oscuro",
+    "system": "Sistema"
+  },
+  "HomePage": {
+    "heroTitle": "Excelencia legal a su alcance",
+    "heroSubtitle": "Soluciones legales estratégicas, personalizadas y de alto rendimiento para proteger su patrimonio y sus negocios.",
+    "ctaConsult": "Programar Consulta",
+    "ctaLearnMore": "Saber Más"
+  },
+  "About": {
+    "title": "Sobre el Despacho",
+    "subtitle": "Tradición y excelencia unida a la innovación",
+    "description": "Fundado con el propósito de ofrecer asesoramiento legal de alta calidad, nuestro despacho destaca por el trato personalizado y la búsqueda incesante de las mejores soluciones legales para nuestros clientes."
+  },
+  "Services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Especialidades del despacho",
+    "civil": "Derecho Civil",
+    "civilDesc": "Asistencia en contratos, responsabilidad civil, familia y sucesiones.",
+    "labor": "Derecho Laboral",
+    "laborDesc": "Representación en litigios y asesoramiento corporativo preventivo.",
+    "corporate": "Derecho Empresarial",
+    "corporateDesc": "Asesoramiento corporativo, quiebras y recuperación de empresas.",
+    "tax": "Derecho Tributario",
+    "taxDesc": "Planificación fiscal y defensa en ejecuciones fiscales.",
+    "penal": "Derecho Penal",
+    "penalDesc": "Defensa especializada en delitos corporativos y cumplimiento."
+  },
+  "Team": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Conozca a los profesionales detrás de nuestra excelencia",
+    "partner1": "Dr. Carlos Hass",
+    "p1Spec": "Socio Fundador | Especialista en Derecho Civil",
+    "p1Bio": "Maestría en Derecho con más de 20 años de experiencia en litigios complejos.",
+    "partner2": "Dra. Mariana Pezzetta",
+    "p2Spec": "Socia Fundadora | Especialista en Derecho Empresarial",
+    "p2Bio": "Doctora en Derecho Comercial, actuando en la estructuración de grandes negocios."
+  }
+}

@@ -1,65 +1,151 @@
-import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Section, SectionHeader } from "@/components/ui/Section";
+import { ServiceCard } from "@/components/cards/ServiceCard";
+import { LawyerCard } from "@/components/cards/LawyerCard";
+import { Button } from "@/components/ui/Button";
+import { 
+  faScaleBalanced, 
+  faBriefcase, 
+  faBuilding 
+} from "@fortawesome/free-solid-svg-icons";
+
+export async function generateMetadata() {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+  return {
+    title: `Hass & Pezzetta | ${t("heroTitle")}`,
+  };
+}
+
+import { getLocale } from "next-intl/server";
 
 export default function Home() {
+  const tHome = useTranslations("HomePage");
+  const tAbout = useTranslations("About");
+  const tServices = useTranslations("Services");
+  const tTeam = useTranslations("Team");
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="flex-grow flex flex-col">
+      {/* HERO SECTION */}
+      <section className="relative w-full py-32 md:py-48 lg:py-64 flex items-center justify-center overflow-hidden bg-primary text-white">
+        <div className="absolute inset-0 bg-[url('/assets/imgs/hero/img_hero_bernardo_diulie.avif')] bg-cover bg-top brightness-[0.3]"></div>
+        <div className="law-container relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 font-outfit uppercase tracking-wider backdrop-blur-sm max-w-5xl mx-auto">
+            {tHome("heroTitle")}
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 font-light drop-shadow-md">
+            {tHome("heroSubtitle")}
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+             <Button size="lg" variant="secondary" href="/contato">
+               {tHome("ctaConsult")}
+             </Button>
+             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 dark:hover:bg-white/10 dark:text-white dark:border-white" href="#sobre">
+               {tHome("ctaLearnMore")}
+             </Button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+      
+      {/* ABOUT SECTION */}
+      <Section id="sobre" bgWhite>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold font-outfit text-primary dark:text-white mb-4">
+              {tAbout("title")}
+            </h2>
+            <h3 className="text-xl text-secondary font-medium mb-6 uppercase tracking-wide">
+              {tAbout("subtitle")}
+            </h3>
+            <p className="text-lg text-muted-foreground dark:text-gray-300 leading-relaxed mb-8">
+              {tAbout("description")}
+            </p>
+            <div className="grid grid-cols-2 gap-6 mb-8">
+              <div className="border-l-4 border-secondary pl-4">
+                <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+15</span>
+                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">Anos de Experiência</span>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+5k</span>
+                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">Casos de Sucesso</span>
+              </div>
+            </div>
+            <Button variant="primary" href="/equipe">Conheça nossa História</Button>
+          </div>
+          <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
+             <div className="absolute inset-0 bg-[url('/assets/imgs/hero/img_hero_bernardo_diulie.avif')] bg-cover bg-center"></div>
+             <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+          </div>
+        </div>
+      </Section>
+
+      {/* SERVICES SUMMARY SECTION */}
+      <Section id="servicos">
+         <SectionHeader 
+           title={tServices("title")} 
+           subtitle={tServices("subtitle")}
+         />
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <ServiceCard 
+              title={tServices("civil")}
+              description={tServices("civilDesc")}
+              icon={faScaleBalanced}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <ServiceCard 
+              title={tServices("corporate")}
+              description={tServices("corporateDesc")}
+              icon={faBuilding}
+            />
+            <ServiceCard 
+              title={tServices("labor")}
+              description={tServices("laborDesc")}
+              icon={faBriefcase}
+            />
+         </div>
+         <div className="text-center">
+            <Button variant="outline" href="/servicos">Ver todos os serviços</Button>
+         </div>
+      </Section>
+
+      {/* TEAM HIGHLIGHT SECTION */}
+      <Section id="equipe" bgWhite>
+         <SectionHeader 
+           title={tTeam("title")} 
+           subtitle={tTeam("subtitle")}
+         />
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+            <LawyerCard 
+              name={tTeam("partner1")}
+              specialty={tTeam("p1Spec")}
+              bio={tTeam("p1Bio")}
+              imageUrl="/assets/imgs/equipe/foto_bernardo.avif"
+              linkedin="https://linkedin.com"
+            />
+            <LawyerCard 
+              name={tTeam("partner2")}
+              specialty={tTeam("p2Spec")}
+              bio={tTeam("p2Bio")}
+              imageUrl="/assets/imgs/equipe/foto_diulie.avif"
+              linkedin="https://linkedin.com"
+            />
+         </div>
+         <div className="text-center">
+            <Button variant="primary" href="/equipe">Conheça toda a equipe</Button>
+         </div>
+      </Section>
+
+      {/* CONTACT CTA SECTION */}
+      <section className="py-20 bg-secondary text-primary dark:bg-black/80 dark:border-t dark:border-border">
+        <div className="law-container text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-6 dark:text-white">Pronto para resolver suas questões jurídicas?</h2>
+          <p className="text-xl mb-10 max-w-2xl mx-auto font-medium dark:text-gray-300">Agende uma consulta com nossos especialistas e descubra como podemos proteger seus interesses.</p>
+          <Button variant="primary" size="lg" href="/contato" className="bg-primary text-white hover:bg-primary/90 dark:bg-secondary dark:text-black dark:hover:bg-opacity-90">
+            Falar com um especialista
+          </Button>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

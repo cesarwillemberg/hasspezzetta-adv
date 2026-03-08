@@ -1,0 +1,48 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "team": "Our Team",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Theme": {
+    "light": "Light Theme",
+    "dark": "Dark Theme",
+    "system": "System"
+  },
+  "HomePage": {
+    "heroTitle": "Legal Excellence within your reach",
+    "heroSubtitle": "Strategic, personalized, and high-performance legal solutions to protect your assets and businesses.",
+    "ctaConsult": "Schedule Consultation",
+    "ctaLearnMore": "Learn More"
+  },
+  "About": {
+    "title": "About the Firm",
+    "subtitle": "Tradition and excellence combined with innovation",
+    "description": "Founded with the purpose of offering high-quality legal advice, our firm stands out for its personalized service and relentless pursuit of the best legal solutions for our clients."
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "Firm specialties",
+    "civil": "Civil Law",
+    "civilDesc": "Assistance in contracts, civil liability, family, and succession.",
+    "labor": "Labor Law",
+    "laborDesc": "Representation in litigation and preventive corporate labor consulting.",
+    "corporate": "Corporate Law",
+    "corporateDesc": "Corporate advisory, bankruptcy, and business recovery.",
+    "tax": "Tax Law",
+    "taxDesc": "Tax planning and defense in tax executions.",
+    "penal": "Criminal Law",
+    "penalDesc": "Specialized defense in corporate crimes and compliance."
+  },
+  "Team": {
+    "title": "Our Team",
+    "subtitle": "Meet the professionals behind our excellence",
+    "partner1": "Dr. Carlos Hass",
+    "p1Spec": "Founding Partner | Specialist in Civil Law",
+    "p1Bio": "Master in Law with over 20 years of experience in complex litigation.",
+    "partner2": "Dra. Mariana Pezzetta",
+    "p2Spec": "Founding Partner | Specialist in Corporate Law",
+    "p2Bio": "PhD in Commercial Law, acting in the structuring of large businesses."
+  }
+}
