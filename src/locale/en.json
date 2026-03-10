@@ -20,7 +20,10 @@
   "About": {
     "title": "About the Firm",
     "subtitle": "Tradition and excellence combined with innovation",
-    "description": "Founded with the purpose of offering high-quality legal advice, our firm stands out for its personalized service and relentless pursuit of the best legal solutions for our clients."
+    "description": "Founded with the purpose of offering high-quality legal advice, our firm stands out for its personalized service and relentless pursuit of the best legal solutions for our clients.",
+    "yearsOfExperience": "Years of Experience",
+    "successCases": "Success Cases",
+    "ctaHistory": "Discover our History"
   },
   "Services": {
     "title": "Our Services",
@@ -36,7 +39,8 @@
     "health": "Health Law",
     "healthDesc": "Legal advice for healthcare professionals on labor rights issues.",
     "litigation": "Specialized Litigation",
-    "litigationDesc": "Representation in legal proceedings for the recovery of labor credits."
+    "litigationDesc": "Representation in legal proceedings for the recovery of labor credits.",
+    "ctaAllServices": "See all services"
   },
   "History": {
     "title": "Our History",
@@ -46,6 +50,8 @@
   "Team": {
     "title": "Our Team",
     "subtitle": "Meet the professionals behind our excellence",
+    "description": "Our firm is proud to count on highly qualified professionals, with solid academic background and vast practical experience. We act in a multidisciplinary way, ensuring that each case receives the specialized attention it deserves.",
+    "foundingPartners": "Founding Partners",
     "partner1": "Bernardo Luiz Pezzetta Willemberg",
     "p1Spec": "Founding Partner | Specialist in Labor Law",
     "p1Bio": "Specialist in Labor Law and Sports Law.",
@@ -54,7 +60,8 @@
     "p2Bio": "Specialist in Consumer Law and Digital Law.",
     "partner3": "Jolair de Ávila Hass",
     "p3Spec": "Founding Partner | Specialist in Tax Law",
-    "p3Bio": "Specialist in Tax Recovery and Social Security Law."
+    "p3Bio": "Specialist in Tax Recovery and Social Security Law.",
+    "ctaAllTeam": "Meet the whole team"
   },
   "Contact": {
     "title": "Contact Us",
@@ -111,5 +118,10 @@
     "contactUs": "Contact Us",
     "rights": "All rights reserved.",
     "madeBy": "Made by"
+  },
+  "CtaBanner": {
+    "title": "Ready to solve your legal issues?",
+    "subtitle": "Schedule a consultation with our experts and discover how we can protect your interests.",
+    "button": "Talk to an expert"
   }
 }

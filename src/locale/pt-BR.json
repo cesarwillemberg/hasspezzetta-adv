@@ -20,7 +20,10 @@
   "About": {
     "title": "Sobre o Escritório",
     "subtitle": "Tradição e excelência aliadas à inovação",
-    "description": "Fundado com o propósito de oferecer assessoria jurídica de alta qualidade, nosso escritório se destaca pelo atendimento personalizado e pela busca incessante das melhores soluções legais para nossos clientes."
+    "description": "Fundado com o propósito de oferecer assessoria jurídica de alta qualidade, nosso escritório se destaca pelo atendimento personalizado e pela busca incessante das melhores soluções legais para nossos clientes.",
+    "yearsOfExperience": "Anos de Experiência",
+    "successCases": "Casos de Sucesso",
+    "ctaHistory": "Conheça nossa História"
   },
   "Services": {
     "title": "Nossos Serviços",
@@ -36,7 +39,8 @@
     "health": "Direito à Saúde",
     "healthDesc": "Assessoria jurídica para profissionais da saúde em questões de direitos trabalhistas.",
     "litigation": "Contencioso Especializado",
-    "litigationDesc": "Representação em processos judiciais para recuperação de créditos trabalhistas."
+    "litigationDesc": "Representação em processos judiciais para recuperação de créditos trabalhistas.",
+    "ctaAllServices": "Ver todos os serviços"
   },
   "History": {
     "title": "Nossa História",
@@ -46,6 +50,8 @@
   "Team": {
     "title": "Nossa Equipe",
     "subtitle": "Conheça os profissionais por trás da nossa excelência",
+    "description": "Nosso escritório orgulha-se de contar com profissionais altamente capacitados, com sólida formação acadêmica e vasta experiência prática. Atuamos de forma multidisciplinar, garantindo que cada caso receba a atenção especializada que merece.",
+    "foundingPartners": "Sócios Fundadores",
     "partner1": "Bernardo Luiz Pezzetta Willemberg",
     "p1Spec": "Sócio Fundador | Especialista em Direito do Trabalho",
     "p1Bio": "Especialista em Direito do Trabalho e Direito Desportivo.",
@@ -54,7 +60,8 @@
     "p2Bio": "Especialista em Direito do Consumidor e Direito Digital.",
     "partner3": "Jolair de Ávila Hass",
     "p3Spec": "Sócio Fundador | Especialista em Direito Tributário",
-    "p3Bio": "Especialista em Recuperação Tributária e Direito Previdenciário."
+    "p3Bio": "Especialista em Recuperação Tributária e Direito Previdenciário.",
+    "ctaAllTeam": "Conheça toda a equipe"
   },
   "Contact": {
     "title": "Fale Conosco",
@@ -111,5 +118,10 @@
     "contactUs": "Fale Conosco",
     "rights": "Todos os direitos reservados.",
     "madeBy": "Feito por"
+  },
+  "CtaBanner": {
+    "title": "Pronto para resolver suas questões jurídicas?",
+    "subtitle": "Agende uma consulta com nossos especialistas e descubra como podemos proteger seus interesses.",
+    "button": "Falar com um especialista"
   }
 }

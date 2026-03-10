@@ -25,6 +25,7 @@ export default function Home() {
   const tAbout = useTranslations("About");
   const tServices = useTranslations("Services");
   const tTeam = useTranslations("Team");
+  const tCtaBanner = useTranslations("CtaBanner");
 
   // Calculate dynamic years of experience from March 26, 2024
   const calcExperience = () => {
@@ -77,14 +78,14 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="border-l-4 border-secondary pl-4">
                 <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+{expYears}</span>
-                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">Anos de Experiência</span>
+                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">{tAbout("yearsOfExperience")}</span>
               </div>
               <div className="border-l-4 border-primary pl-4">
                 <span className="block text-3xl font-bold text-primary dark:text-white mb-1">+5k</span>
-                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">Casos de Sucesso</span>
+                <span className="text-sm font-medium text-muted-foreground dark:text-gray-400 uppercase tracking-wide">{tAbout("successCases")}</span>
               </div>
             </div>
-            <Button variant="primary" href="/equipe">Conheça nossa História</Button>
+            <Button variant="primary" href="/equipe">{tAbout("ctaHistory")}</Button>
           </div>
           <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
              <div className="absolute inset-0 bg-[url('/assets/imgs/hero/img_hero_bernardo_diulie.avif')] bg-cover bg-center"></div>
@@ -117,7 +118,7 @@ export default function Home() {
             />
          </div>
          <div className="text-center">
-            <Button variant="outline" href="/servicos">Ver todos os serviços</Button>
+            <Button variant="outline" href="/servicos">{tServices("ctaAllServices")}</Button>
          </div>
       </Section>
 
@@ -151,17 +152,17 @@ export default function Home() {
             />
          </div>
          <div className="text-center">
-            <Button variant="primary" href="/equipe">Conheça toda a equipe</Button>
+            <Button variant="primary" href="/equipe#nossa-equipe">{tTeam("ctaAllTeam")}</Button>
          </div>
       </Section>
 
       {/* CONTACT CTA SECTION */}
       <section className="py-20 bg-secondary text-primary dark:bg-black/80 dark:border-t dark:border-border">
         <div className="law-container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-6 dark:text-white">Pronto para resolver suas questões jurídicas?</h2>
-          <p className="text-xl mb-10 max-w-2xl mx-auto font-medium dark:text-gray-300">Agende uma consulta com nossos especialistas e descubra como podemos proteger seus interesses.</p>
+          <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-6 dark:text-white">{tCtaBanner("title")}</h2>
+          <p className="text-xl mb-10 max-w-2xl mx-auto font-medium dark:text-gray-300">{tCtaBanner("subtitle")}</p>
           <Button variant="primary" size="lg" href="/contato" className="bg-primary text-white hover:bg-primary/90 dark:bg-secondary dark:text-black dark:hover:bg-opacity-90">
-            Falar com um especialista
+            {tCtaBanner("button")}
           </Button>
         </div>
       </section>

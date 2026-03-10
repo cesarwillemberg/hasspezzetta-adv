@@ -21,6 +21,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("Navigation");
+  const tFooter = useTranslations("Footer");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -54,7 +55,7 @@ export function Navbar() {
               Hass & Pezzetta
             </h1>
             <p className="font-inter text-xs tracking-widest text-muted-foreground uppercase dark:text-gray-300">
-              Advocacia
+              {tFooter("advocacy")}
             </p>
           </div>
         </Link>

@@ -34,22 +34,20 @@ export default function EquipePage() {
       </Section>
 
       {/* Nossa Equipe Section */}
-      <Section bgWhite className="py-20 border-t border-border/50 shadow-inner">
+      <Section id="nossa-equipe" bgWhite className="py-20 border-t border-border/50 shadow-inner">
         <SectionHeader 
           title={tTeam("title")} 
           subtitle={tTeam("subtitle")}
         />
         <div className="max-w-4xl mx-auto text-center mb-16">
           <p className="text-lg text-muted-foreground dark:text-gray-300 leading-relaxed">
-            Nosso escritório orgulha-se de contar com profissionais altamente capacitados,
-            com sólida formação acadêmica e vasta experiência prática. Atuamos de forma
-            multidisciplinar, garantindo que cada caso receba a atenção especializada que merece.
+            {tTeam("description")}
           </p>
         </div>
         
         {/* Sócios Fundadores */}
         <h3 className="text-2xl font-bold font-outfit text-primary dark:text-secondary mb-8 text-center border-b border-border pb-4 w-fit mx-auto">
-          Sócios Fundadores
+          {tTeam("foundingPartners")}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <LawyerCard 

@@ -20,7 +20,10 @@
   "About": {
     "title": "Sobre el Despacho",
     "subtitle": "Tradición y excelencia unida a la innovación",
-    "description": "Fundado con el propósito de ofrecer asesoramiento legal de alta calidad, nuestro despacho destaca por el trato personalizado y la búsqueda incesante de las mejores soluciones legales para nuestros clientes."
+    "description": "Fundado con el propósito de ofrecer asesoramiento legal de alta calidad, nuestro despacho destaca por el trato personalizado y la búsqueda incesante de las mejores soluciones legales para nuestros clientes.",
+    "yearsOfExperience": "Años de Experiencia",
+    "successCases": "Casos de Éxito",
+    "ctaHistory": "Conoce nuestra Historia"
   },
   "Services": {
     "title": "Nuestros Servicios",
@@ -36,7 +39,8 @@
     "health": "Derecho de la Salud",
     "healthDesc": "Asesoramiento legal para profesionales de la salud en temas de derechos laborales.",
     "litigation": "Litigio Especializado",
-    "litigationDesc": "Representación en procedimientos legales para la recuperación de créditos laborales."
+    "litigationDesc": "Representación en procedimientos legales para la recuperación de créditos laborales.",
+    "ctaAllServices": "Ver todos los servicios"
   },
   "History": {
     "title": "Nuestra Historia",
@@ -46,6 +50,8 @@
   "Team": {
     "title": "Nuestro Equipo",
     "subtitle": "Conozca a los profesionales detrás de nuestra excelencia",
+    "description": "Nuestro despacho se enorgullece de contar con profesionales altamente cualificados, con sólida formación académica y vasta experiencia práctica. Actuamos de forma multidisciplinar, garantizando que cada caso reciba la atención especializada que merece.",
+    "foundingPartners": "Socios Fundadores",
     "partner1": "Bernardo Luiz Pezzetta Willemberg",
     "p1Spec": "Socio Fundador | Especialista en Derecho Laboral",
     "p1Bio": "Especialista en Derecho Laboral y Derecho Deportivo.",
@@ -54,7 +60,8 @@
     "p2Bio": "Especialista en Derecho del Consumidor y Derecho Digital.",
     "partner3": "Jolair de Ávila Hass",
     "p3Spec": "Socio Fundador | Especialista en Derecho Tributario",
-    "p3Bio": "Especialista en Recuperación Tributaria y Derecho de la Seguridad Social."
+    "p3Bio": "Especialista en Recuperación Tributaria y Derecho de la Seguridad Social.",
+    "ctaAllTeam": "Conoce a todo el equipo"
   },
   "Contact": {
     "title": "Contáctenos",
@@ -111,5 +118,10 @@
     "contactUs": "Contáctenos",
     "rights": "Todos los derechos reservados.",
     "madeBy": "Hecho por"
+  },
+  "CtaBanner": {
+    "title": "¿Listo para resolver sus problemas legales?",
+    "subtitle": "Programe una consulta con nuestros expertos y descubra cómo podemos proteger sus intereses.",
+    "button": "Hablar con un experto"
   }
 }
