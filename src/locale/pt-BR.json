@@ -1,6 +1,6 @@
 {
   "Navigation": {
-    "home": "Home",
+    "home": "Início",
     "team": "Sobre",
     "services": "Serviços",
     "rights": "Seus Direitos",
@@ -98,5 +98,18 @@
       "title": "4. Formulário de Avaliação",
       "desc": "Preencha o formulário abaixo para avaliarmos o seu caso de forma personalizada."
     }
+  },
+  "Footer": {
+    "advocacy": "Advocacia",
+    "description": "Excelência jurídica aliada à estratégia para defender os seus interesses com transparência e ética.",
+    "menu": "Menu",
+    "contactLocation": "Contato & Localização",
+    "mainAddress": "Endereço Principal",
+    "addressDetails1": "Rua 14 de Julho 149 - Centro",
+    "addressDetails2": "Ijuí - RS, Brasil",
+    "addressDetails3": "Edifício Jamile - sala 405, 4º andar.",
+    "contactUs": "Fale Conosco",
+    "rights": "Todos os direitos reservados.",
+    "madeBy": "Feito por"
   }
 }

@@ -98,5 +98,18 @@
       "title": "4. Assessment Form",
       "desc": "Fill out the form below so we can evaluate your case in a personalized way."
     }
+  },
+  "Footer": {
+    "advocacy": "Law Firm",
+    "description": "Legal excellence combined with strategy to defend your interests with transparency and ethics.",
+    "menu": "Menu",
+    "contactLocation": "Contact & Location",
+    "mainAddress": "Main Address",
+    "addressDetails1": "14 de Julho St, 149 - Downtown",
+    "addressDetails2": "Ijuí - RS, Brazil",
+    "addressDetails3": "Jamile Building - room 405, 4th floor.",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved.",
+    "madeBy": "Made by"
   }
 }

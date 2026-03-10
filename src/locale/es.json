@@ -98,5 +98,18 @@
       "title": "4. Formulario de Evaluación",
       "desc": "Complete el siguiente formulario para que evalúemos su caso de forma personalizada."
     }
+  },
+  "Footer": {
+    "advocacy": "Abogacía",
+    "description": "Excelencia legal combinada con estrategia para defender sus intereses con transparencia y ética.",
+    "menu": "Menú",
+    "contactLocation": "Contacto y Ubicación",
+    "mainAddress": "Dirección Principal",
+    "addressDetails1": "Calle 14 de Julho 149 - Centro",
+    "addressDetails2": "Ijuí - RS, Brasil",
+    "addressDetails3": "Edificio Jamile - sala 405, 4º piso.",
+    "contactUs": "Contáctenos",
+    "rights": "Todos los derechos reservados.",
+    "madeBy": "Hecho por"
   }
 }

@@ -7,6 +7,7 @@ import { faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-sv
 
 export function Footer() {
   const t = useTranslations("Navigation");
+  const tFooter = useTranslations("Footer");
   const year = new Date().getFullYear();
 
   return (
@@ -27,12 +28,12 @@ export function Footer() {
                 Hass & Pezzetta
               </h2>
               <p className="font-inter text-xs tracking-widest text-white/70 uppercase">
-                Advocacia
+                {tFooter("advocacy")}
               </p>
             </div>
           </Link>
           <p className="text-white/80 text-sm mb-6 max-w-sm">
-            Excelência jurídica aliada à estratégia para defender os seus interesses com transparência e ética.
+            {tFooter("description")}
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors">
@@ -49,7 +50,7 @@ export function Footer() {
 
         {/* Links */}
         <div>
-          <h3 className="font-outfit font-semibold text-lg mb-6 border-b border-white/20 pb-2 inline-block">Menu</h3>
+          <h3 className="font-outfit font-semibold text-lg mb-6 border-b border-white/20 pb-2 inline-block">{tFooter("menu")}</h3>
           <ul className="flex flex-col gap-3">
             <li>
               <Link href="/" className="text-white/80 hover:text-secondary transition-colors text-sm">
@@ -81,18 +82,18 @@ export function Footer() {
         
         {/* Contact Info */}
         <div className="col-span-1 md:col-span-2">
-          <h3 className="font-outfit font-semibold text-lg mb-6 border-b border-white/20 pb-2 inline-block">Contato & Localização</h3>
+          <h3 className="font-outfit font-semibold text-lg mb-6 border-b border-white/20 pb-2 inline-block">{tFooter("contactLocation")}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <p className="text-white/80 text-sm mb-2 font-medium">Endereço Principal</p>
+              <p className="text-white/80 text-sm mb-2 font-medium">{tFooter("mainAddress")}</p>
               <address className="not-italic text-white/60 text-sm">
-                Rua 14 de Julho 149 - Centro<br />
-                Ijuí - RS, Brasil<br />
-                Edifício Jamile - sala 405, 4º andar.
+                {tFooter("addressDetails1")}<br />
+                {tFooter("addressDetails2")}<br />
+                {tFooter("addressDetails3")}
               </address>
             </div>
             <div>
-              <p className="text-white/80 text-sm mb-2 font-medium">Fale Conosco</p>
+              <p className="text-white/80 text-sm mb-2 font-medium">{tFooter("contactUs")}</p>
               <p className="text-white/60 text-sm mb-1">hasspezzettaadv@gmail.com</p>
               <p className="text-white/60 text-sm">+55 (55) 3940-0016</p>
             </div>
@@ -103,11 +104,11 @@ export function Footer() {
       <div className="law-container mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4">
           <p className="text-white/50 text-xs">
-            &copy; {year} Hass & Pezzetta Advocacia. Todos os direitos reservados.
+            &copy; {year} Hass & Pezzetta Advocacia. {tFooter("rights")}
           </p>
           <span className="text-white/30 text-xs hidden md:inline">|</span>
           <p className="text-white/50 text-xs">
-            Feito por <a href="https://cesar.willemberg.com/" target="_blank" rel="noreferrer" className="text-secondary hover:text-white underline underline-offset-4 transition-colors">César Willemberg</a>
+            {tFooter("madeBy")} <a href="https://cesar.willemberg.com/" target="_blank" rel="noreferrer" className="text-secondary hover:text-white underline underline-offset-4 transition-colors">César Willemberg</a>
           </p>
         </div>
         <p className="text-white/50 text-xs mt-4 md:mt-0">

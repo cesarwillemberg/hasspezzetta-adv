@@ -7,7 +7,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const t = useTranslations("Theme");
 
@@ -20,7 +20,7 @@ export function ThemeToggle() {
     return <div className="w-8 h-8" />;
   }
 
-  const isDark = theme === "dark";
+  const isDark = resolvedTheme === "dark";
 
   return (
     <button
